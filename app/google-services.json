@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "960703242881",
+    "firebase_url": "https://emergencycare-e77f1.firebaseio.com",
+    "project_id": "emergencycare-e77f1",
+    "storage_bucket": "emergencycare-e77f1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960703242881:android:18df5f487e200321",
+        "android_client_info": {
+          "package_name": "app.emergencycare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960703242881-erdenufb8e6b9nj6ii31b53rrpp19q0q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.emergencycare",
+            "certificate_hash": "d0a6fbafb4ae5ccfd77ef0a241a10a7e2d0fad9d"
+          }
+        },
+        {
+          "client_id": "960703242881-rmo0gtj5ps3l3qccodv4q4t2u81v6c9h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.emergencycare",
+            "certificate_hash": "b05af7de6dd570c0d7166268e21dbd255292e604"
+          }
+        },
+        {
+          "client_id": "960703242881-kbsug6da1sqq92jnij8fd0ur6amh1doh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvw5S8MWnjCfDs03cIws0mPqhArx44AEs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960703242881-kbsug6da1sqq92jnij8fd0ur6amh1doh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:960703242881:android:7bd0eff0a0dec568",
+        "android_client_info": {
+          "package_name": "app.emergencyhealthcare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "960703242881-2p5j6sabs4g6062bfnk0tkpv8q7uive6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "app.emergencyhealthcare",
+            "certificate_hash": "d0a6fbafb4ae5ccfd77ef0a241a10a7e2d0fad9d"
+          }
+        },
+        {
+          "client_id": "960703242881-kbsug6da1sqq92jnij8fd0ur6amh1doh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvw5S8MWnjCfDs03cIws0mPqhArx44AEs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "960703242881-kbsug6da1sqq92jnij8fd0ur6amh1doh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

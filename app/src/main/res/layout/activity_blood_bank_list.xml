@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFF"
+    tools:context="app.emergencycare.VanList">
+
+    <customfonts.Motserrat
+        android:id="@+id/heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:padding="15dp"
+        android:text="Search Blood Banks"
+        android:textColor="@android:color/black"
+        android:textSize="22sp" />
+
+    <customfonts.MyTextView_Lato_Medium
+        android:id="@+id/results"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchview"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:textAllCaps="false"/>
+
+    <View
+        android:id="@+id/separator"
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:background="#ECF0F1"
+        android:visibility="invisible" />
+
+    <LinearLayout
+        android:id="@+id/searchview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="24.3dp"
+        android:layout_marginRight="24.7dp"
+        android:background="@drawable/food_curve_rect"
+        android:orientation="horizontal"
+        android:tag="sticky">
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:padding="15dp"
+            android:src="@drawable/ic_location" />
+
+        <customfonts.EditText_Lato_Meidum
+            android:id="@+id/search"
+            android:layout_width="258dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#FFFF"
+            android:hint="Enter City Name"
+            android:textColor="#373737"
+            android:textSize="16.7sp"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"/>
+
+        <ProgressBar
+            android:id="@+id/v_search_proggressbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="5dp"
+            android:max="10000"
+            android:visibility="invisible" />
+
+        <ImageView
+            android:id="@+id/SearchButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:foreground="@drawable/my_selector"
+            android:onClick="onSearchClicked"
+            android:padding="15dp"
+            android:src="@drawable/search"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/results"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/datalist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/search" />
+    </LinearLayout>
+
+</RelativeLayout>

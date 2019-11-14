@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="health.care">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCr6EJTvCcgOR8PcLsB4_TgFmKBeHTqVGs" />
+
+        <activity android:name=".Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Details" />
+        <activity
+            android:name=".Ambulance"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name=".VanList"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity android:name=".SelectRegistration">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="health.care.Home" />
+        </activity>
+        <activity android:name=".Login">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="health.care.SelectRegistration" />
+        </activity>
+        <activity android:name=".ProvidersProfile">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="health.care.Home" />
+        </activity>
+        <activity
+            android:name=".Register"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="health.care.Login" />
+        </activity>
+        <activity android:name=".VehiclesLocation"></activity>
+        <activity
+            android:name=".RegisterBloodBank"
+            android:windowSoftInputMode="stateVisible|adjustResize">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="health.care.Login" />
+        </activity>
+        <activity android:name=".RegistrationSuccessful" />
+        <activity android:name=".BloodBankList" />
+        <activity android:name=".BloodBankStock"></activity>
+    </application>
+
+</manifest>

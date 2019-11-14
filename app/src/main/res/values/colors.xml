@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ecf0f1</color>
+    <color name="colorPrimaryDark">#ffffff</color>
+    <color name="colorAccent">#e92324</color>
+
+    <!--Category Type Tab Color-->
+    <color name="Indicator_tabTextColor">#DCE1EE</color>
+    <color name="Indicator_tabSelectedTextColor">#e92324</color>
+    <color name="tabindiacator_background">#fff</color>
+    <color name="tabIndicator_color">#38bffe</color>
+    <color name="black">#000000</color>
+
+    <color name="time_color">#373737</color>
+    <color name="red">#ec7063</color>
+    <color name="white">#ffff</color>
+    <color name="blue">#3498db</color>
+
+</resources>
